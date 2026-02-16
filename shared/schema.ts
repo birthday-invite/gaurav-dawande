@@ -19,6 +19,7 @@ export const insertRsvpSchema = createInsertSchema(rsvps).omit({
 }).extend({
   guestCount: z.coerce.number().min(1, "At least one guest is required"),
   email: z.string().email().optional().or(z.literal("")),
+  name: z.string().min(1, "Name is required"),
 });
 
 export type Rsvp = typeof rsvps.$inferSelect;

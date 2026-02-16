@@ -30,8 +30,8 @@ export function Countdown({ targetDate }: CountdownProps) {
       <TimeUnit value={hours} label="Hours" color="text-secondary" />
       <div className="text-4xl font-light text-muted-foreground pb-6">:</div>
       <TimeUnit value={minutes} label="Mins" color="text-accent" />
-      <div className="text-4xl font-light text-muted-foreground pb-6 hidden sm:block">:</div>
-      <TimeUnit value={seconds} label="Secs" color="text-white" className="hidden sm:block" />
+      <div className="text-4xl font-light text-muted-foreground pb-6">:</div>
+      <TimeUnit value={seconds} label="Secs" color="text-white" />
     </div>
   );
 }

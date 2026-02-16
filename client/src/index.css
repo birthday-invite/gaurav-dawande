@@ -24,7 +24,7 @@
   /* Surface Colors */
   --card: 230 30% 12%;
   --card-foreground: 210 40% 98%;
-  
+
   --popover: 230 35% 7%;
   --popover-foreground: 210 40% 98%;
 
@@ -44,17 +44,25 @@
   /* Custom Fonts */
   --font-display: 'Syne', sans-serif;
   --font-body: 'DM Sans', sans-serif;
+  --font-script: 'Pinyon Script', cursive;
 }
 
 @layer base {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground antialiased;
     font-family: var(--font-body);
   }
-  h1, h2, h3, h4, h5, h6 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-display);
   }
 }
